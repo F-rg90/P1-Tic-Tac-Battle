@@ -1,15 +1,112 @@
 body {
+  font-family: serif;
+  background-image: url(/Users/frankierg/desktop/seir-flex-hypatia/classwork/tic-tac-pokemon/images/all-free-download-blue-gradient-background.jpeg);
+  background-size: cover;
 
 }
 
 section {
+  text-align: center;
 
 }
 
 .container {
+  display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 550px;
+    margin: 1px auto;
+    background-image: url(/Users/frankierg/desktop/seir-flex-hypatia/classwork/tic-tac-pokemon/images/tictactoe.png);
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
-.block {
+.cell {
+    width: 150px;
+    height: 150px;
+    line-height: 160px;
+    box-shadow: 0 0 0 0px #333333;
+    font-size: 130px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
 
+
+
+.restart {
+background-color: white;
+ border: none;
+ color: black;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.startButton {
+  background-color: white;
+   border: none;
+   color: black;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+div.modal{
+  visibility: hidden;
+  width: 50vw;
+  padding: 35px;
+  max-width: 400px;
+  position: fixed;
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  text-align: center;
+}/*0,1,1*/
+
+div.modal.open{
+  visibility: visible;
+}
+
+div.carousel{
+  visibility: hidden;
+  width: 50vw;
+  max-width: 700px;
+  position: fixed;
+  top: 45%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #fcd5c2;
+  text-align: center;
+  z-index: 99;
+  padding: 35px;
+}/*0,1,1*/
+
+div.carousel.open{
+  visibility: visible;
+}
+
+div.carousel > img {
+  width: 100%;
+  margin: 20px 0;
 }
